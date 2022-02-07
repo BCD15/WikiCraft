@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif; 
+    flex-direction:column; 
+}
+
+.video{
+    position: fixed; 
+    top: 50;
+    left: 50;
+	width: 1500px; 
+	height: 1500px; 
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.box h1,.box h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.box input[type = "text"],.box input[type = "password"],.box input[type = "email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #582F1B;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type = "email"]:focus{
+    width: 100%;
+    border-color: #8a522cb6;
+}
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #582F1B;
+    padding: 14px;
+    width: 100px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+    background-color: #8a522cb6;
+}
+
+.caixa1{
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #595959;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    z-index: 1;
+}
+
+.logo:hover{
+    transform: scale(1.1); 
+}
+
+.login1 input{
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 90%;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #582F1B;
+    padding: 14px;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.login1 input[type = "submit"]:hover{
+    background-color: #8a522cb6;
+}
+
+.home1 input{
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 4%;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #582F1B;
+    padding: 14px;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.home1 input[type = "submit"]:hover{
+    background-color: #8a522cb6;
+}
+
+.voltar{
+    width: 100px;
+    padding: 40px;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.voltar input{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #582F1B;
+    padding: 14px;
+    color: black;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.voltar input[type = "submit"]:hover{
+    background-color: #8a522cb6;
+}
+
+.caixa_index{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 40%;
+    background: url(imagens/index\ fundo.jpg) no-repeat;
+    box-shadow: rgba(0, 212, 18, 0.4) 5px 5px, rgba(0, 181, 15, 0.3) 10px 10px, rgba(0, 150, 12, 0.2) 15px 15px, rgba(0, 110, 9, 0.1) 20px 20px;
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.steve_index{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: -31%;
+    left: 0%;
+    transition: 0.25s;
+}
+
+.steve_index:hover{
+    transform: scale(1.05);
+}
+
+.texto_index{
+    position: absolute;
+    color: white;
+    top: 15%;
+    left: 60%;
+    width: 35%;
+    height: 73%;
+    padding: 20px;
+    background: rgba(3, 3, 3, 0.767);
+    text-align: center;
+    text-align: justify;
+    backdrop-filter: blur(20px);
+    border-radius: 20px 5px 20px 5px;
+}
+
+.introducao{
+    position: absolute;
+    background-image: url(imagens/enderman.png);
+    width: 300px;
+    height: 300px;
+    left: 28%;
+    top: 120%;
+    box-shadow: rgba(0, 97, 8, 0.25) 0px 30px 60px -12px inset, rgba(0, 119, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    color: white;
+    transition: 0.25s;
+}
+
+.comecar{
+    position: absolute;
+    background-image: url(imagens/madeira.png);
+    width: 300px;
+    height: 300px;
+    left: 52%;
+    top: 120%;
+    box-shadow: rgba(0, 97, 8, 0.25) 0px 30px 60px -12px inset, rgba(0, 119, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    color: white;
+    transition: 0.25s;
+}
+
+.modos{
+    position: absolute;
+    background-image: url(imagens/comando.png);
+    width: 300px;
+    height: 300px;
+    left: 28%;
+    top: 170%;
+    box-shadow: rgba(0, 97, 8, 0.25) 0px 30px 60px -12px inset, rgba(0, 119, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    color: white;
+    transition: 0.25s;
+}
+
+.curiosidades{
+    position: absolute;
+    background-image: url(imagens/pedra.png);
+    width: 300px;
+    height: 300px;
+    left: 52%;
+    top: 170%;
+    box-shadow: rgba(0, 97, 8, 0.25) 0px 30px 60px -12px inset, rgba(0, 119, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    color: white;
+    transition: 0.25s;
+}
+
+.forum{
+    position: absolute;
+    background-image: url(imagens/estante.png);
+    width: 300px;
+    height: 300px;
+    left: 40%;
+    top: 220%;
+    box-shadow: rgba(0, 97, 8, 0.25) 0px 30px 60px -12px inset, rgba(0, 119, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    color: white;
+    transition: 0.25s;
+}
+
+.introducao h3, .comecar h3, .modos h3, .curiosidades h3, .forum h3{
+    text-align: center;
+    margin-top: 45%;
+}
+
+.introducao a, .comecar a, .modos a, .curiosidades a, .forum a{
+    text-decoration: none;
+    color: white;
+}
+
+.introducao:hover, .comecar:hover, .modos:hover, .curiosidades:hover, .forum:hover{
+    box-shadow: rgba(0, 192, 16, 0.521) 0px 30px 60px -12px inset, rgba(0, 197, 0, 0.548) 0px 18px 36px -18px inset;
+    font-size: 20px;
+    transform: scale(1.1); 
+}
+
+.h1_criaturas_intro{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+.p_criaturas_intro{
+    text-align: center;
+    text-align: left;
+    width: 700px;
+    font-size: 20px;
+}
+
+.criaturas_passificas{
+    position: absolute;
+    top: 40%;
+}
+
+.criaturas_passificas h1{
+    position: absolute;
+    top: 47%;
+    left: 42%;
+}
+
+.criaturas_passificas p{
+    position: absolute;
+    text-align: center;
+    text-align: left;
+    width: 700px;
+    font-size: 20px;
+    top: 80%;
+    left: 14%;
+}
+
+.criaturas_neutros{
+    position: absolute;
+    top: 120%;
+}
+
+.criaturas_neutros h1{
+    position: absolute;
+    top: 47%;
+    left: 42%;
+}
+
+.criaturas_neutros p{
+    position: absolute;
+    text-align: center;
+    text-align: left;
+    width: 700px;
+    font-size: 20px;
+    top: 80%;
+    left: 14%;
+}
+
+.criaturas_agressivas{
+    position: absolute;
+    top: 190%;
+}
+
+.criaturas_agressivas h1{
+    position: absolute;
+    top: 47%;
+    left: 42%;
+}
+
+.criaturas_agressivas p{
+    position: absolute;
+    text-align: center;
+    text-align: left;
+    width: 700px;
+    font-size: 20px;
+    top: 80%;
+    left: 14%;
+}
+
+.comecar_box{
+    position: absolute;
+    top: 20%;
+}
+
+.comecar_box p{
+    width: 700px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.comecar_box img{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.criativo h1, .survival h1, .aventura h1, .hardcore h1{
+    text-align: center;
+}
+
+.criativo p, .survival p, .aventura p, .hardcore p{
+    text-align: center;
+    text-align: left;
+    font-size: 20px;
+    width: 700px;
+}
+
+.criativo{
+    position: absolute;
+    top: 25%;
+}
+
+.criativo iframe{
+    position: absolute;
+    left: 8%;
+}
+
+.survival{
+    position: absolute;
+    top: 140%;
+}
+
+.survival iframe{
+    position: absolute;
+    left: 5%;
+}
+
+.aventura{
+    position: absolute;
+    top: 320%;
+}
+
+.aventura iframe{
+    position: absolute;
+    left: 16%;
+}
+
+.hardcore{
+    position: absolute;
+    top: 420%;
+}
+
+.hardcore iframe{
+    position: absolute;
+    left: 15%;
+}
+
+.curiosidades_box{
+    position: absolute;
+    top: 25%;
+}
+
+.curiosidades_box p, .curiosidades_box h2{
+    text-align: center;
+    text-align: justify;
+    width: 700px;
+    font-size: 20px;
+}
+
+.grande_caixa{
+    background-color: #ffffff;
+    margin: 30px;
+    
+}
+
+.media_caixa{
+    text-decoration: aqua;
+    border-color: #595959;
+    border-radius: 100px;
+}
+
+.pequena_caixa{
+    top: 30px;
+    background-color: lightgray;
+    color: black;
+    height: 70px; 
+    width: 1000px;
+    padding: 10px;
+}
+
+.usuario{
+    text-align: left;
+    background-color: lightgray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.envi{
+    float: left;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background-color: tomato;
+    margin-top:10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cance{
+    float: right;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background-color: tomato;
+    margin-top:10px;
+    padding: 5px;
+    cursor: pointer;
+}
